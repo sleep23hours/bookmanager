@@ -1,0 +1,6 @@
+books.json.buildozer/
+bin/
+*.apk
+.venv/
+__pycache__/
+.idea/
