@@ -25,8 +25,9 @@ jobs:
       - name: Build APK
         run: |
           export PATH=$PATH:~/.local/bin
+          mkdir -p ~/.android && touch ~/.android/repositories.cfg
           cd bookmanager
-          buildozer android debug
+          yes | buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
